@@ -1,0 +1,141 @@
+body{
+    background-color:#448bc9;
+    background-image: url(pictures/background.jpg);
+    font-family:'Montserrat', sans-serif !important;
+}
+
+#titleBox{
+    position: relative;
+    background-color: #52C8FF;
+    color: #FFE852;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    border-radius: 8px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 15px;
+}
+#mainBox{
+    background-color: #83ff52;
+    border-radius: 8px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#PlayOn{
+    background-color: #FF5252;
+    width: 100px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+#PlayOn:hover{
+    background-color: #FFAE52;
+    transition: 0.2s;
+}
+
+.p_guess{
+    height: 80px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #ffe852;
+    border: 5px solid #ffae52;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.p_guess:hover{
+    background-color: hotpink;
+    transition: 0.2s;
+}
+
+.icon{
+    height: 75px;
+    width: 75px;
+    background-color: white;
+    border-radius: 8px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 10px;
+    
+}
+
+#title{
+    font-size: 50px;
+}
+a{
+    color: hotpink;
+}
+h4{
+    position: absolute;
+    top: 50%;
+    left: 40%
+}
+#footer{
+    background-color: hotpink;
+    border-radius: 8px;
+    width: 80%;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 10%;
+    color: #FFE852;
+    text-align: center;
+}
+#devs{
+    margin-top: 20px;
+}
+/* Here starts the game page */
+
+.game_container{
+    background-color: #ffae52;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 8px;
+}
+.question_container{
+    background-color: #ffe852;
+    width: 90%;
+    border-radius: 8px;
+    min-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 92px;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.button_container{
+    
+}
+
+#yes_button{
+    margin-left: 36%;
+    background-color: #83FF52;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+#yes_button:hover{
+    background-color: #4dff07;
+}
+#no_button{
+    background-color: #FF5252;
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 8px;
+}
+
+#no_button:hover{
+    background-color: #ff1e1e;
+}
+button{
+    display: inline;
+}

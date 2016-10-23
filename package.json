@@ -1,0 +1,25 @@
+{
+  "name": "90-smart",
+  "version": "1.0.0",
+  "description": "An \"akinator\" type of program",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "dependencies":{
+        "express": "~4.8.6"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelpg/90-smart.git"
+  },
+  "keywords": [
+    "A.I."
+  ],
+  "author": "Samuel P. Jose O. Paola R. Alfonso M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelpg/90-smart/issues"
+  },
+  "homepage": "https://github.com/samuelpg/90-smart#readme"
+}
