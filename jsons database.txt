@@ -1,0 +1,82 @@
+propiedades = persons.map(function(person){
+  return person[property];
+})
+
+
+
+
+Human real
+"Name" : "",
+"age" : ,
+"missing family member" : "",
+"in_love" : "",
+"talent" : "",
+"occupation" : "",
+"villain" : "",
+"dumb" : "",
+"mean" : "",
+"funny" : "",
+"hair_color"" : "",
+"gender" : "",
+"skin_color" : "",
+"weight"" : "",
+"specific" : "",
+"catch_phrase" : "",
+"name_in_show_title" : "",
+"educational" : "",
+---------------------
+Animal real
+"Name" : "",
+"gender" : "",
+"hair_color" : "",
+"type" : "",
+"talks" : "",
+"personality" : "",
+"specific" : "",
+"catch_phrase" : "",
+"name_in_show_title" : "",
+"educational" : "",
+---------------------------
+Human animated
+
+"name" : "",
+"age" : ,
+"missing family member" : "",
+"in_love" : "",
+"talent" : "",
+"occupation" : "",
+"villain" : "",
+"dumb" : "",
+"mean" : "",
+"funny" : "",
+"hair_color"" : "",
+"gender" : "",
+"skin_color" : "",
+"weight"" : "",
+"specific" : "",
+"catch_phrase" : "",
+"primary_character" : "",
+"name_in_show_title" : "",
+"educational" : "",
+"superpower" : "",
+"one_set_clothes" : "",
+-------------------------
+Animal animated
+"name" : "",
+"gender" : "",
+"hair_color" : "",
+"type" : "",
+"talks" : "",
+"personality" : "",
+"specific" : "",
+"catch_phrase" : "",
+"primary_character" : "",
+"name_in_show_title" : "",
+"educational" : "",
+"clothes" : "",
+"sidekick" : "",
+-----------------------------
+Animated other
+"shape" : "",
+"personality" : "",
+"human_like" : "",
