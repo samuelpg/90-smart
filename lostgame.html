@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>90'smart</title>
+        <link rel='stylesheet' href="style.css">
+        <script type="text/javascript" src="server.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    </head>
+    <body style="background-image:background.jpg !important">
+        <div id="titleBox"> 
+            <h1>90'smart!</h1>
+            <h4>90's kids will remember... i already know!</h4><br>
+            <a href="https://github.com/samuelpg/90-smart">Github</a> <p style="display:inline;">
+        </div><br>
+        <div id="mainBox">
+            <div id="guess" class="guess">
+                <h2>Welp... seems i don't know which character you're thinking of</h2>
+            </div>
+            <div class="final-req">
+                <h2>Tell me, who is it?</h2>
+                <form action="server.js">
+                    <input type="text" name="name" placeholder="name of the character" class="textjs">
+                    <input type="submit" name="button" value="Submit!" id="submit_b">
+                </form>
+                <br>
+            </div>
+            <br>
+        </div>
+    </body>
+</html>
