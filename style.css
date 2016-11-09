@@ -1,28 +1,53 @@
+/* grid */
+* {
+    box-sizing: border-box;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  /* border: 1px solid red;*/
+}
+ /* end grid */
+
 body{
     background-color:#448bc9;
     background-image: url(pictures/background.jpg);
     font-family:'Montserrat', sans-serif !important;
 }
-
 #titleBox{
     position: relative;
     background-color: #52C8FF;
     color: #FFE852;
     text-align: center;
-    padding: 5px 5px 5px 5px;
     border-radius: 8px;
-    width: 80%;
-    margin-left: 10%;
     margin-bottom: 15px;
 }
 #mainBox{
     background-color: #83ff52;
     border-radius: 8px;
-    width: 80%;
-    margin-left: 10%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    height: 570px;
 }
 #PlayOn{
     background-color: #FF5252;
@@ -31,16 +56,12 @@ body{
     font-size: 20px;
     border-radius: 8px;
 }
-
 #PlayOn:hover{
     background-color: #FFAE52;
     transition: 0.2s;
 }
-
 .p_guess{
     height: 80px;
-    width: 90%;
-    margin-left: 5%;
     background-color: #ffe852;
     border: 5px solid #ffae52;
     border-radius: 8px;
@@ -48,23 +69,19 @@ body{
     padding-top: 5px;
     text-align: left;
 }
-
 .p_guess:hover{
     background-color: hotpink;
     transition: 0.2s;
 }
-
 .icon{
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width: 60px;
     background-color: white;
     border-radius: 8px;
     float: left;
     margin-left: 5px;
     margin-right: 10px;
-    
 }
-
 #title{
     font-size: 50px;
 }
@@ -72,9 +89,9 @@ a{
     color: hotpink;
 }
 h4{
-    position: absolute;
-    top: 50%;
-    left: 40%
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
 }
 #footer{
     background-color: hotpink;
@@ -89,13 +106,15 @@ h4{
 #devs{
     margin-top: 20px;
 }
+p{
+    padding-right: 20px;
+}
 /* Here starts the game page */
-
 .game_container{
     background-color: #ffae52;
-    width: 80%;
-    margin-left: 10%;
     border-radius: 8px;
+    text-align: center;
+	height: 570px;
 }
 .question_container{
     background-color: #ffe852;
@@ -109,33 +128,90 @@ h4{
     margin-top: 10px;
 }
 .button_container{
-    
+  text-align: center;
+  display: inline;
 }
-
-#yes_button{
-    margin-left: 36%;
+.yes_button{
     background-color: #83FF52;
     width: 150px;
     height: 50px;
     font-size: 30px;
     border-radius: 8px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
-
-#yes_button:hover{
+.yes_button:hover{
     background-color: #4dff07;
 }
-#no_button{
+.no_button{
     background-color: #FF5252;
     width: 150px;
     height: 50px;
     font-size: 30px;
     border-radius: 8px;
 }
-
-#no_button:hover{
+.no_button:hover{
     background-color: #ff1e1e;
 }
 button{
     display: inline;
+}
+/* -- Here starts 90's --*/
+.mainComputer{
+    height: 570px;
+    background-color: #D3D5CF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    color: #939393;
+}
+.screen{
+    background-color: #164f57;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    background-image: url("pictures/cara1.png");
+    background-size: contain;
+}
+.screen_img{
+    max-width:auto;
+    max-height:350px;
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-- post game --*/
+.guess{
+    background-color: #FFE852;
+    border-radius: 10px;
+    width: 50%;
+    display: inline-block;
+}
+.final-req{
+    margin-top: 10px;
+    background-color: #FFE852;
+    width: 50%;
+    display: inline-block;
+    border-radius: 8px;
+}
+.img{
+    margin-top: 10px;
+    background-color: #448bc9;
+    width: 50%;
+    display: inline-block;
+    border-radius: 8px;
+    padding: 10px 5px 10px 5px;
+} 
+
+.textjs{
+    height: 30px;
+    padding-left: 5px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+#submit_b{
+    height: 30px;
+    width: 80px;
+    background-color: #83ff52;
 }

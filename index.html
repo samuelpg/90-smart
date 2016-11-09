@@ -3,20 +3,39 @@
     <head>
         <title>90'smart</title>
         <link rel='stylesheet' href="style.css">
-        <script type="text/javascript" src="server.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+        <script src="/node_modules/angular/angular.js"></script>
+		<script src="js/app.js" type="text/javascript"></script>
+		<script src="js/controllers/MainController.js" type="text/javascript"></script>
     </head>
-    <body>
-        <div id="titleBox"> 
+    
+    <body ng-app="myApp">
+        <!-- title box -->
+        <div class="row">
+        <div class="col-1"></div>
+        <div id="titleBox" class="col-10"> 
             <h1 id="title">90'smart!</h1>
-            <h4>90's kids will remember... i alredy know!</h4>
-            <a>Github</a> <p style="display:inline;"> // </p> <a>Development Blogs</a>
+            <h4>90's kids will remember... i already know!</h4>
+            <a href="https://github.com/samuelpg/90-smart">Github</a>
         </div>
-        <div id="mainBox">
+        <div class="col-1"></div>
+        </div>
+        <!-- main box -->
+        <div ng-controller="MainController"> 
+        <div class='row'> 
+        <div class="col-1"> </div>
+        <div class="mainComputer col-3">
+            <div class="screen">
+                <img ng-src="{{ image }}" class="screen_img">
+            </div>
+            <h2> 90'smart </h2>
+        </div>
+        <div class="col-1"> </div>
+            <div id="mainBox" class="col-6">
+            <p>Welcome to 90'smart, just think of a character of any series in the 90's and i will try to guess which character you are thinking of!</p> <h3>When you're ready, hit Play</h3>
             
-            <p>Welcome to 90'smart, just think of a character of any series in the 90's and i will try to guess which character you are thinking of!. <br><br> When you're ready, hit Play</p>
             <div class="container">
-                <button id="PlayOn"> Play! </button>
+                <button id="PlayOn" ng-mouseover="photo()" ng-mouseleave="unphoto()"> Play! </button>
             </div>
             <div class="container"> 
                 <h2 id="lastGuessed"> Previous Guesses: </h2>
@@ -25,18 +44,23 @@
                     <h2 id="name"> Angelica</h2>
                 </div>
                 <div class="p_guess"> 
-                    <img class="icon" src="characters/dexter.png">
-                    <h2 id="name"> Didi</h2>
+                    <img class="icon" src="characters/dee dee.png">
+                    <h2 id="name"> dee dee</h2>
                 </div>
                 <div class="p_guess"> 
-                    <img class="icon" src="characters/cowardly_dog.png">
-                    <h2 id="name"> Cowardly dog</h2>
+                    <img class="icon" src="characters/dexter.png">
+                    <h2 id="name"> dexter</h2>
                 </div>
             </div>
         </div>
-        <div id="footer">
+            <div class="col-1"> </div>
+        </div>
+        </div>
+        
+      <!--  <div id="footer">
+            
             <h1 id="devs"> Meet the Developers </h1>
             
-        </div>
+        </div> -->
     </body>
 </html>
