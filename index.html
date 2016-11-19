@@ -4,7 +4,7 @@
         <title>90'smart</title>
         <link rel='stylesheet' href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-        <script src="/node_modules/angular/angular.js"></script>
+        <script src="js/angular.min.js" type="text/javascript"></script>
 		<script src="js/app.js" type="text/javascript"></script>
 		<script src="js/controllers/MainController.js" type="text/javascript"></script>
     </head>
@@ -35,21 +35,16 @@
             <p>Welcome to 90'smart, just think of a character of any series in the 90's and i will try to guess which character you are thinking of!</p> <h3>When you're ready, hit Play</h3>
             
             <div class="container">
-                <button id="PlayOn" ng-mouseover="photo()" ng-mouseleave="unphoto()"> Play! </button>
+                <button id="PlayOn" ng-mouseover="photo()" ng-mouseleave="unphoto()"
+                onclick="location.href = 'http://localhost:1337/game';"        > <span id="play_text">Play! </span></button>
             </div>
-            <div class="container"> 
-                <h2 id="lastGuessed"> Previous Guesses: </h2>
-                <div class="p_guess"> 
-                    <img class="icon" src="characters/angelica.png">
-                    <h2 id="name"> Angelica</h2>
-                </div>
-                <div class="p_guess"> 
-                    <img class="icon" src="characters/dee dee.png">
-                    <h2 id="name"> dee dee</h2>
-                </div>
-                <div class="p_guess"> 
-                    <img class="icon" src="characters/dexter.png">
-                    <h2 id="name"> dexter</h2>
+            <div class="container" ng-controller="LastGamesController as lgCtrl"> 
+              <h2 id="lastGuessed"> Previous Guesses:</h2>
+                <div id="LastGuessedList" ng-repeat=" character in lgCtrl.characters">
+                    <div class="p_guess"> 
+                        <img class="icon" ng-src="{{character.image}}">
+                        <h2 id="name"> {{character.name}}</h2>
+                    </div>
                 </div>
             </div>
         </div>
