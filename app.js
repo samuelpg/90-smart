@@ -1,6 +1,7 @@
 (function(){
     
 var app = angular.module("myApp", []);
+var ansCounter=0;
 
 app.controller('MainController', ['$scope', function ($scope) {
    /* var images = ["1.gif", "2.gif", "3.gif", "4.gif", "5.gif", "6.gif", "7.gif", "8.gif"]; */
@@ -25,15 +26,18 @@ app.controller('LastGamesController' , function($http){
     
 app.controller('AnswerController',['$http', "$scope",function($http, $scope){
     
- 
+ $scope.interrogante="Is your Character Real?";
+    
+    
    function send(valor){
         $http.post('/ans', valor).success(function(data){
-        console.log(data);
+        $scope.interrogante = data.question;
      });
    }
     
     $scope.setYes = function(){
        send({"answer": "yes"});
+        ansCounter++
     };
     
     $scope.setNo = function(){
@@ -43,17 +47,19 @@ app.controller('AnswerController',['$http', "$scope",function($http, $scope){
 
 }]);
     
-    
+    /*
 app.controller('QuestionsController',['$http','$scope',function($http,$scope){
- 
+  
+
+$http.delete('/Question');
     
 $http.get('/Question').success(function(data){
         $scope.interrogante = data;
     });
-    
-    
-}]);
 
+
+}]);
+ */
     
    
     
